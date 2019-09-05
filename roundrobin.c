@@ -23,7 +23,7 @@ int main(){
 
 		job_found = 0;
 
-		while(!job_found){ // finding the shorted available job
+		while(!job_found){ // finding the next available job
 			if(job_queue[curr_index][1] <= time && job_queue[curr_index][0] != 0) job_found = 1;
 			else curr_index = (curr_index+1)%job_count;
 		}
