@@ -4,7 +4,7 @@ int main(){
 	int buffer_pos=0,buffer_size,buffer_full=0,buffer_empty=1;
 	char action;
 
-	printf("buffer of buffer(max 100)\n");
+	printf("size of buffer(max 100)\n");
 	scanf("%d",&buffer_size);
 
 
