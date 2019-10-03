@@ -1,19 +1,37 @@
 #include<stdio.h>
 
 int main(){
-	int job_queue[100],job_count,i,disk_size,pos,min=9999,mini;
+	int job_count,temp,i,disk_size,pos,locarr[10000];
 
+	for(i=0;i<10000;i++) locarr[i] = 0;
 
-	printf("enter job count (max 100) disk size and initial position of head\n");
+	printf("enter job count (max 100) disk size(max 10 000)and initial position of head\n");
 	scanf("%d %d %d",&job_count,&disk_size,&pos);
 
 	for(i = 0;i < job_count;i++){
-		scanf("%d",&job_queue[i]);
+		scanf("%d",&temp);
+		locarr[temp]=1;
+
 	}
 	
-	while(1==1){
-		
+	for(i=pos;i<disk_size;i++){
+		if (locarr[i]){
+			printf("%d to %d\n", pos,i);
+			pos=i;
+			locarr[i]=0;
+		}
 	}
+	printf("%d to %d\n",pos,disk_size-1 );
+	printf("%d to 0\n",disk_size-1 );
+	pos = 0;
+
+	for(i=0;i<disk_size;i++){
+		if (locarr[i]){
+			printf("%d to %d\n", pos,i);
+			pos=i;
+		}
+	}
+	
 
 	printf("\n");
 	return 0;
