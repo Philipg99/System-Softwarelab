@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	int buffer_pos,i,buffer_size,buffer_full=0,buffer_empty=1;
+	int buffer_pos=0,buffer_size,buffer_full=0,buffer_empty=1;
 	char action;
 
 	printf("buffer of buffer(max 100)\n");
@@ -18,11 +18,11 @@ int main(){
 				buffer_empty = 0;
 				if (buffer_pos == buffer_size)
 					buffer_full = 1;
-				printf("message added to buffer\n");
+				printf("message added to buffer,(%d/%d)\n",buffer_pos,buffer_size);
 
 			}
 			else
-				printf("buffer full\n");
+				printf("buffer full,(%d/%d)\n",buffer_pos,buffer_size);
 
 		}
 
@@ -33,11 +33,11 @@ int main(){
 				buffer_full = 0;
 				if (buffer_pos == 0)
 					buffer_empty = 1;
-				printf("message removed form buffer\n");
+				printf("message removed form buffer,(%d/%d)\n",buffer_pos,buffer_size);
 
 			}
 			else
-				printf("buffer is empty\n");
+				printf("buffer is empty,(%d/%d)\n",buffer_pos,buffer_size);
 
 		}
 			
