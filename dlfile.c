@@ -49,7 +49,7 @@ int main(){
 			case 'a':
 				for(i=0;i<id_counter;i++)
 					printf("%d:%s ",drctry[i]->id,drctry[i]->name);
-				printf("enter directory id\n");
+				printf("\nenter directory id: ");
 				scanf("%d",&tmp);
 				drctry[tmp]->subfile[drctry[tmp]->obj_count] = malloc(20 * sizeof(char));
 				scanf("%s", drctry[tmp]->subfile[drctry[tmp]->obj_count]);
