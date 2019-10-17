@@ -17,7 +17,7 @@ int main(){
 
 	for(i=0;i<100;i++) drctry[i]=NULL;
 	
-	printf("f.create folder\na.add folder\np.print directory\n");
+	printf("f.create folder\na.add file\np.print directory\n");
 
 	while(code!='q'){
 		scanf("%c",&code);
