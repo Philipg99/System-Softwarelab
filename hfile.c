@@ -29,27 +29,26 @@ void print(struct obj root, int level){
 
 int main(){
 	struct obj root,*curr;
-	int i;
-	char code = 'p',q;
+	int i,code=2,q;
 
 	strcpy(root.name,"root");
 	root.obj_count=0;
 	for(i=0;i<100;i++) root.sub[i] = NULL;
 	
 
-	printf("f.create folder or file\np.print directory\nq.quit\n");
+	printf("1.create folder or file\n2.print directory\n3.quit\n");
 	while(code!='q'){
 
-		scanf("%c",&code);
-		getchar();
+		scanf("%d",&code);
+	
 		curr = &root;
 		switch(code){
-			case 'f':
+			case 1:
 
 			while(1==1){
-				printf("this directory (%s) or sub directory(y/n)\n",(*curr).name);
-				scanf("%c",&q);
-				if(q == 'y'){
+				printf("1.this directory (%s) 2.sub directory\n",(*curr).name);
+				scanf("%d",&q);
+				if(q == 1){
 					(*curr).sub[(*curr).obj_count] = (struct obj*) malloc(sizeof(struct obj));
 					(*curr).sub[(*curr).obj_count]->obj_count=0;
 					for(i=0;i<100;i++) (*curr).sub[(*curr).obj_count]->sub[i] = NULL;
@@ -58,25 +57,24 @@ int main(){
 					(*curr).obj_count ++;
 					break;
 				}
-				if(q == 'n'){
+				if(q == 2){
 					for(i=0;i<(*curr).obj_count;i++) printf("%d:%s ",i,(*curr).sub[i]->name);
 					printf("\n");
 					scanf("%d",&i);
 					curr=(*curr).sub[i];
 
-				getchar();
 				}
 			}
 
 				break;
 
 
-			case 'p':
+			case 2:
 				printf("root\n");
 				print(root,1);
 				break;
 
-			case 'q':
+			case 3:
 				break;
 
 
