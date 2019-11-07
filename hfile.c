@@ -37,7 +37,7 @@ int main(){
 	
 
 	printf("1.create folder or file\n2.print directory\n3.quit\n");
-	while(code!='q'){
+	while(code!=3){
 
 		scanf("%d",&code);
 	
