@@ -1,0 +1,9 @@
+enter job count (max 100) disk size and initial position of head
+5 1000 500
+1 400 20 300 445
+500 to 1
+1 to 400
+400 to 20
+20 to 300
+300 to 445
+total header movement : 1703

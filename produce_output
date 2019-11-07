@@ -1,0 +1,14 @@
+size of buffer(max 100)
+2
+p
+message added to buffer,(1/2)
+p
+message added to buffer,(2/2)
+p
+buffer full,(2/2)
+c
+message removed form buffer,(1/2)
+c
+message removed form buffer,(0/2)
+c
+buffer is empty,(0/2)

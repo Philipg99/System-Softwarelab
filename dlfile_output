@@ -1,0 +1,22 @@
+1.create folder
+2.add file
+3.print directory
+1
+enter folder name: one      
+1
+enter folder name: two
+2
+0:one 1:two 
+enter directory id: 0
+enter file name: in1
+2
+0:one 1:two 
+enter directory id: 1
+enter file name: in2
+3
+
+root
+	one
+		in1
+	two
+		in2

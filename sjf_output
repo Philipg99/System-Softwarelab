@@ -1,0 +1,9 @@
+enter the size followed next line the cpu times  and arival times(max 100)
+5 
+10 0
+3 1
+1 5
+5 10
+2 11
+averge turn around time:8.800000
+average waiting time:4.600000

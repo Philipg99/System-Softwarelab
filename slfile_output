@@ -1,0 +1,11 @@
+1.add file 
+2.print directory
+1
+enter file name: hello
+1
+enter file name: world
+2
+
+root
+	hello
+	world

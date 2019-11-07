@@ -1,0 +1,11 @@
+enter job count (max 100) disk size(max 10 000)and initial position of head
+5 1000 456
+30 12 600 445 997
+456 to 600
+600 to 997
+997 to 999
+999 to 0
+0 to 12
+12 to 30
+30 to 445
+total head movement : 1987

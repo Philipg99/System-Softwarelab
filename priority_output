@@ -1,0 +1,9 @@
+enter the number of jobs (max 100)and next line the cpu times , arival times and prority(higher the number higher the priority)
+5
+5 0 1
+1 1 6
+10 1 2
+3 5 3
+4 4 4
+averge turn around time:8.800000
+average waiting time:4.200000

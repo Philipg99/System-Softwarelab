@@ -1,0 +1,9 @@
+enter the number of jobs and quantum size followed next line the cpu times  and arival times(max 100)
+5 5
+4 0
+10 3
+5 4
+10 10
+11 12
+averge turn around time:18.400000
+average waiting time:10.400000

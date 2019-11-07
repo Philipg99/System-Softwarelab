@@ -1,0 +1,32 @@
+1.create folder or file
+2.print directory
+3.quit
+1
+1.this directory (root) 2.sub directory
+1
+enter name level1
+1
+1.this directory (root) 2.sub directory
+2
+0:level1 
+0
+1.this directory (level1) 2.sub directory
+1
+enter name level2
+1
+1.this directory (root) 2.sub directory
+2
+0:level1 
+0
+1.this directory (level1) 2.sub directory
+2
+0:level2 
+0
+1.this directory (level2) 2.sub directory
+1
+enter name level3
+2
+root
+	level1
+		level2
+			level3

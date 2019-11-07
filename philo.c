@@ -5,7 +5,7 @@ int main(){
 	char action;
 	for(i=0;i<100;i++) frokarr[i]=1;
 
-	printf("number of philiosifers(max 100)\n");
+	printf("number of philosopher(max 100)\n");
 	scanf("%d",&phil_count);
 
 
@@ -17,17 +17,17 @@ int main(){
 			if (frokarr[phil_no]==1 && frokarr[(phil_no+1)%phil_count]==1){
 				frokarr[phil_no]=0;
 				frokarr[(phil_no+1)%phil_count] =0;
-				printf("philosofer %d is eating\n",phil_no );
+				printf("philosopher %d is eating\n",phil_no );
 			}
 			else
-				printf("philosofer %d is unable to eat\n",phil_no );
+				printf("philosopher %d is unable to eat\n",phil_no );
 
 		}
 
 		if( action == 'f'){
 			frokarr[phil_no]=1;
 			frokarr[(phil_no+1)%phil_count] =1;
-			printf("philosofer %d is no longer eating\n",phil_no );
+			printf("philosopher %d is no longer eating\n",phil_no );
 
 		}
 			

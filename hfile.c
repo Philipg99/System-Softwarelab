@@ -26,7 +26,6 @@ void print(struct obj root, int level){
 	
 }
 
-
 int main(){
 	struct obj root,*curr;
 	int i,code=2,q;
@@ -68,7 +67,6 @@ int main(){
 
 				break;
 
-
 			case 2:
 				printf("root\n");
 				print(root,1);
@@ -77,14 +75,9 @@ int main(){
 			case 3:
 				break;
 
-
-
 		};
-
-
 	}
 	
-
 	printf("\n");
 	return 0;
 }

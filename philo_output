@@ -1,0 +1,10 @@
+number of philiosifers(max 100)
+3
+e 1
+philosofer 1 is eating
+e 2
+philosofer 2 is unable to eat
+f 1
+philosofer 1 is no longer eating
+e 2
+philosofer 2 is eating
