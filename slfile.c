@@ -6,7 +6,7 @@ int main(){
 	char  *s[100],tmp[20];
 
 	for(i=0;i<100;i++) s[i]=NULL;
-	printf("1.add file \n2.print directory\n");
+	printf("1.add file \n2.print directory\n3.delete file\n");
 	while(code!='q'){
 		
 
@@ -26,6 +26,15 @@ int main(){
 				obj_count ++;
 				break;
 			case 3:
+				printf("enter file name: " );
+				scanf("%s", tmp);
+				for(i=0;i<obj_count;i++)
+				{
+				    if(s[i]==tmp)
+				        remove (s[i]);
+				}
+				printf("file %s has been deleted", tmp);
+				obj_count --;
 				break;
 
 
