@@ -36,6 +36,8 @@ int main(){
 				printf("file %s has been deleted", tmp);
 				obj_count --;
 				break;
+			case 4:
+				break;
 
 
 
