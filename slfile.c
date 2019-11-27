@@ -26,7 +26,9 @@ int main(){
 				obj_count ++;
 				break;
 			case 3:
-				break;
+			    exit(1);
+			default:
+			    printf("wrong input");
 
 
 
